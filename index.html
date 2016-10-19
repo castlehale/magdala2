@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html lang="en">
+<head>
+  <title>: [ messages from the great mother ] :</title>
+  <meta name="description" content="Messages from the Great Mother">
+  <meta name="author" content="This message has been brought by Magdala Ramirez">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>    
+    // A fortune cookie app
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Flamenco" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+  
+<style>
+
+  @media all and (max-width: 3600px) and (min-width: 1200px) {
+  body {font-size: 8vw; font-family: 'Flamenco', sans-serif;  }
+  }
+  
+  @media all and (max-width: 1200px) and (min-width: 800px) {
+  body {font-size: 8vw;    }
+  }
+
+  @media all and (max-width: 800px) and (min-width: 600px) {
+  body {
+    font-size: 8vw;  }
+  }
+  @media all and (max-width: 600px) and (min-width: 400px) {
+  body {
+    font-size: 10vw;  }
+  }
+  @media all and (max-width: 400px) and (min-width: 200px) {
+  body {
+    font-size: 10vw;}
+  }
+  @media all and (max-width: 200px) and (min-width: 100px) {
+  body {
+    font-size: 15vw;  }
+  }
+
+body {
+  background-image:url(https://unsplash.it/1600/1200/?random);
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  font-weight: bold;
+  color: white;  
+  align: center;
+    vertical-align: middle;
+
+}
+
+#ident{
+
+  vertical-align: middle;
+  position:absolute;
+  bottom: 1%;
+  right: 1%;
+  background-color:rgba(0, 0, 0, 0.000);
+  z-index:99898;
+
+}
+
+
+#mainBShim {  
+
+  position: absolute;
+    bottom: 1%;
+    left: 1%;
+
+      vertical-align: middle;
+  background-color:rgba(255, 255, 255, 0.000);
+  z-index: 6501;
+
+
+
+}
+
+
+
+
+
+#mainTShimText {  
+
+  position: absolute;
+    top:1%;
+    bottom: 15%;
+    left: 1%;
+    right:1%;
+  background-color:rgba(0, 0, 0, 0.0);
+font-family: 'Flamenco', sans-serif;
+  background-repeat: no-repeat;
+background-origin: 0;
+  z-index: 99501;
+  overflow: auto;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+
+a, a:visited, a:active, a:hover
+{
+   color: #fff;
+   text-decoration: underline;
+}
+
+
+</style>
+  
+<script src="buzz.min.js"></script>
+<script>
+  var music = new buzz.sound('eagle.mp3', {
+                      volume:   99,
+                      loop:     true,
+                      autoplay: true });
+  music.load();
+  music.play();
+  var set = 0;
+
+  function mpause(){ music.togglePlay(); 
+    set++;
+    var mute = document.getElementById('mute');
+    var theImg = mute.src;
+    var x = theImg.split("/");
+    var t = x.length-1;
+    var y = x[t];
+
+    if(y=='up.png'){
+      mute.src='mute.png'
+      }
+    else{
+      mute.src='up.png'
+      }
+  };
+  </script>
+</head>
+<body>
+
+<div id='ident' align="right"><a href="http://www.magdalas.com" target='_blank'><img height="100" width="100"src="logo2_sm.png" /></a></div>
+<div id="mainBShim"> 
+<!-- castlehale -->
+<a href="#" onclick="mpause()"><img height="50" width="50" src="up.png" id="mute" name='PlayOrPause' border='0' /></a>
+</div>
+<div id="share" align="center">
+        <div class="logo">
+        
+          <a href="" class=""></a>
+          <a href="" class=""></a>
+          <a href="" class=""></a>
+          <a href="" class=""></a>
+
+        </div>
+</div>
+
+
+<div id="mainTShimText" align='center'>
+  <blockquote id="randomquote">
+    <p></p> 
+      <!--<cite>&mdash; <a href="#" target="_blank"></a></cite>-->
+  </blockquote>
+<script>
+  var myQuotes = [{
+quote:      "Be real",
+cite: "The Great Mother",
+url: "http://www.magdalas.com/new-products"
+},{
+quote:"Truth will make you free always",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Honesty is the way of the true human being",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You are Love",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"True Human Being is in you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Believe in yourself!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Never give up!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Know that you are protected",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"trust yourself",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You always find a way",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Your choices are for the highest good of everyone",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"love is the path of the true human being",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"your are connected with everyone around you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Be true to yourself and everyone around you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I am here with you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have all the assistance that you need,",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"check your priorities in life",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"align with me, I am your own nature",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you know the truth",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"do the right thing",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"check your perception of reality",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"is ok to have a good cry, drink your tears, great medicine",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"stand up and be truth",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"is not about the doing, is about the being",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Be honest in all your relations",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"most of the time… Fear is just an illusion",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Love passionally",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"love is the path of human being",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Check your resistance, and let it flow",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I be-live in you, can your believe in me?",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"there are many worlds, your choice!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are never alone",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"here I am with you at all times",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You know how to do this!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"let it be!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you want to love a man, not need a man",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"all will be provided, trust!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"look around you, I left many clues in your path",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are creating a reality, what are you creating?",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are the daughter of the creator, yes, you are creating",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"be responsible for your creation",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"is always is a co-creation, choose good allies",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have a body of light! Remember?",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have always been beautiful",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Beauty all around you and inside of you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"see your synchronicities in life",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"ask, and immediately you will have the answer, I am here with you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Help, every time that you can",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I am your other you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I am here can you feel me?",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"check who is your helper and who is not",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"friends are a blessing, who is your friend?",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"be yourself at all times no matter what",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"use your own power! You have all the power",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"ask for your highest truth available for you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"let it flow.. don’t resist",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"everything happens for a reason",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"uncover the messages around you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"put attention to your light body… you have the speed of light",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you live in maya time",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"breathe, and connect",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"your heart knows",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are perfect!!! You are my daughter!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"your physical body is strong, you make it strong!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You can do it! I am with you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"is not about the world of the form… is about the world of the essence",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"observe… observe… observe",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"in the silence you can hear the orchestra",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are the one and the whole, and the whole in the one",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Balance is within you through the alignment with me",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"balance your male and female, make the inside the same of the outside",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"listen to the wind, and the flowers… they know",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Life is an adventure",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are life! The same life force in the tree is the same life force in you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"return to your innocence",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Feel your power! Bring your presence",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the presence of your own presence open the doors",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"open your senses… all together… including the belly bottom!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"here the voice behind the voice.. you will be surprise",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"is always your choice, be responsible",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are NOT a victim, feel your power",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I am inside of you, can you hear me?",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"there is always a new beginning",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"let’s crack it up! I am here with you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"truth is always there… sometimes behind a great lie",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You are here to in-light, so bring your light!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"never betray yourself.. observe your thoughts",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"never be afraid to use your light!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"yes, stand up and say it!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"there is no feminine way without the sisterhood",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are not here to teach the man, you are here to hold your own vibration",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Hold your vibration, never lower yourself",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"BE! …just BE! Never be afraid of being",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You have the force! May the force be with you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"find the flip! Never give up!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"feel the connection with all around you…",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are nature, you have always been nature… trust your nature",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"use your medicine at all times",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"your gifts are for the highest good of every one",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"open your talents, you will always find new ones",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Choose a higher version of your self, is always at hand",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"your body heals itself, you have the power",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t worry what they think of you… they don’t think",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have always what you need",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"encounter yourself every day at all times",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are not bounded by time",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"within you resides the one that \'knows\' ",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have the ability to recognize truth",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"use your feminine power! Is greater than the masculine",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Don’t give your power away… is very precious",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the only one that you need to reach is yourself...",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the greatest relation that you have is within yourself",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"look around you, look the flowers… they are all helping you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Know who you are by being truth",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the heart is always being revealed, put attention",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"heal the wound, and return to your own nature",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"everyone around you have their own medicine, where is yours?",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t cover up… you know truth",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Love is the truth healer… not time",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"The world of the essence is within you, is time to bring forward",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You don’t have to keep the \'dirty\' little secrets anymore",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"All life is sacred",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Find your true sisters around you, they are your helpers",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"love truly, then compassion will happen naturally",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I don’t give up on you… I am always here",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you don’t let go… then, go to the next step of the pyramid",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have the memories of the Mother Earth, time to remember",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You just know! Trust your self",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t accept dishonoring you are a sacred woman",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"treat everyone with honor and respect, that is the way",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"respect your own self, don’t allow any disrespect",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You are the land, you are Mother Earth, from you depend the whole community",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"There is always a door open, you are never trap",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"is ok to say NO! say no more often",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"The Divine Feminine is guiding the path to the new world … no pressure...",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You are the daughter of the Great Mother!, and so is the mother ...so is the daughter",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You are awakening new powers every day",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Teach by example… including yourself",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you live in a world of mirrors",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"what ever is happening to one is happening to the many",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"is ok to ask for directions… just listen to your own voice inside",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are the guide of your own family, just let light be!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Yes, eat organic, if you can’t, well, eat beauty is all around you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Light has always been there, be that light that you are",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Be as organic as you can, just be yourself",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the code of the true human being is within you, time to wake up!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"is not about trusting everyone, is about trusting your own self",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"never betray yourself… in that way you will never betray anyone",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t be afraid of your own shadow, embrace her with your light",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t be afraid to say what is in your heart",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Sacredness is inside of you and all around you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"live your life as sacred for all life is sacred",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"see in everyone a reflection of your self",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are living in an hologram and you have the power to change it",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"No One! Have power over you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"what it makes you a mother was the Great Mother not your children",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have all the relations inside of you, in there you heal them",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"There is a spiritual council, you can always come and bring your situation",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the Feminine is the virtual reality, the masculine is the manifestation.  you are both",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are giving your life for something, …is all your choice, choose well",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you never die, for you haven’t born",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are always connected, choose your connections",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have all this spiritual helpers, know them, and be grateful",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"choose peace, the true human being is peaceful by nature",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t be afraid to loose any one, be yourself and all will be in the right place",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"if a man wants to go, open the door wider (old saying of the abuelas)",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Hold your ground, the universe is supporting you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You are being, nurturer and provider - you are the healer and the protector, for I am inside of you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"be present at all times, I am here with you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I am the voice inside of your silence, listen",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I am the Mother and the Daughter, I am  woman, I am life, I am light, I am your truth",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Do not fear me my sisters, my daughters, my mothers, for it is me the one that have brought to you the revelation. I am the one who reveals",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I am your truth, do not fear me, for I have come to liberate you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I am the perfect vibration that awakes,  heals, reveals. I am the path and the walker. In me resides many worlds, I am the door!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Ask for the revelation at any time",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I have always love you, beyond all times, before you existed",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You have your exclusive connection with the Great Mother, talk to me",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"There is no dance without the stillness",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you can only have what you already give",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You choose Make your home in a high place inside of yourself",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Honor your linage, for your DNA knows how to do this",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"listen to the orchestra of the universe, and the universe will let you know when is your turn",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have a place in the sacred circle of life already!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"your home is where your heart resides",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"do have an incredible wisdom inside of you, is ok to bring it forward",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"love is the greatest connector",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are no victim, feel your own power",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"protect your sisters and daughters, still is a patriarchal system",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the golden era is here! Just let it happen inside of you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Forgive for your own liberation... is ok if you don’t forget",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Is about the experience don’t judge yourself",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"all is going to be ok",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"something beautiful will happen",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the enemy of my enemy is my friend... <i>Quetzalcoatl</i>",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"choose your ally wisely",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"see where is the heart of the people… no expectations",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t project yourself, is clouding your discernment...",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Maintain all your relations in alignment with your divinity",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Go and visit a sacred place around you… that always help",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You have the power, choose well how to use it",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"No strings attach!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"And all starts with you… Clean yourself",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"what you are looking for, is also looking for you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Sometimes your vulnerability is your biggest strength",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"all what was hidden is coming to the light…",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"time to let go what it does not belong, embrace your freedom",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"encounter your harmony within yourself, will take you to the divine order",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Don’t fight, embrace peace, for all will fall by itself",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Protect life, be light",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are powerful and has nothing to do with the people around you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Look around you, all change, all flow all is love",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"All have a purpose, you have a purpose in life, do you what it is? Ask  and will be revealed",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"All will be revealed, nothing will remain in the hidden, put attention",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Relatives comes from the heart not only blood relatives",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"See the sun, for he is giving you a new medicine",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the sick and the cure walks together",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I can see you in me, can you see me in you?",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"we are entering into a new world, as it meant to be! where love is the bonding, and sacredness the way of living...",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"The ascension is massively happening but it still is a choice..",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Let light be, …just let the Light be!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You are a portal, you are love, and you are light.",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"There is a sublime part in you… always evolving in the awareness … Awareness is not bounded by time, yet is link with frequency…",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You live in a magical place, where the perfect synchronicity is being revealed, through that perfect harmony…",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You light body, rise you vibration, and quickening the awareness of the self and all around you…",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Some people call it, spiritual work… I like to call it … your own nature…",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Compassion is natural for the true human being, let compassion be… no need to struggle",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"The sacred seed is awakening, and understanding a new way to relate...",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Know then in your heart, that the entrega is taking place for the seed to be awaken",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"All will pass, except truth, for truth is never expired, never obsolete, she is not bounded by time",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You have always been free… remember?",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Listen, and listen carefully",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"is me that one that call you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"As the butterfly newly born, a whole new reality, is unfolding in your eyes, in your heart,",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Explore, connect, and know you are being love",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"There is a perfect dance of the male and female... a bridge within the self...'I meet you half way'",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"today is the Time of the Reconstruction of the Original Vibration of Being Human, are you ready",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You have always been nature…",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Human beings are remembering who they are… that is showing a new path in life.",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"A New Era is here, a Golden Era, where love is the connection, and the way of living.",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t be afraid to speak up! You have been in silence long time",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"love is the path of the true human being",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t be afraid to say… 'I don’t think so!'",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are perfect… a flower is perfect and not you? you are Perfect!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"use your power! In a good way… if some of has a problem they can ask me!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"what you do, who you are, will connect with all your linage",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Embrace your shadow through your light",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"You are an spirit holding a body, not vice versa",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"your garment of light is ready to be use",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Just be Love!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"there are many worlds, is all about vibration, rise your vibration",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"stop complaining, that is dragging your energy down",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"be your own very best friend",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"trust that the path is there… just make the first step",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"there are many symbols around you guiding your way",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"a new way of living is at hand… embrace it",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"heal your heart and love again, for you are love",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are the path and the walker, your path is unique",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"maybe is time for you to pray and trust your prayers",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"your womb is a sacred place, be selective",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"ask for your highest truth available and live in that truth",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"change always comes, embrace change for you are change",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"there is an involution and evolution, both happening at the same time",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are the fifth element, time to embrace who you are",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have the four elements within you, time to balance those",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"wake up early and great the sun! for he is giving you a <i>new medicine</i>",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"in every step is your prayer and in your prayer is the step",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"The Golden era is here! Let go the old paradigm",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Do not allow any one to stop who you are",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Honor and respect starts with you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you can do it! I am here with you all the way!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Wherever you are …there you are! Is not the place is you!",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I am home! I have been calling you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"time to integrate your self, as you are being integrated to a higher realm",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Know that you are being love… touch your heart, in every heart beat I am telling you I love you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t put attention in the world of the form… work in the world of the essence where the real change is happening",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"is time of transcending… rise your vibration",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"listen to the lullaby of the universe, is caressing you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"when I see you, I see me",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"I am the light that dwells in the light, I am calling you",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are unique, the mother never repeat herself",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are interconnected with everyone around you, and beyond",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you have access to the library of the universe",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are a cosmic being, time to embrace who you are",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are the light giver! Don’t be afraid of your own light",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are the dancer of life! Time to remove your veils",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"observe your dreams, they are giving you messages",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"all the relationships are changing, and remembering a world without script",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Remove the wrong beliefs, just present a truth, they will fall",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are being supported by the universe",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"align with the Great Mother, she will uncover a whole new beautiful reality",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"Here I am always with you, can you trust?",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the time of the awakening of the human beings is at hand… a whole new way is being activated",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"remember at all times who you are, and be that, be truthful to your self",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the times of the cover ups are over, now embrace truth",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"don’t lie to your self, be truthful to your self, then you will attract truth in your life",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"soon human beings will be entering in a new reality, a new way of existence",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are receiving help from the Star beings, for a while they have been sending you messages",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the ways of the Great Mother is about happiness",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"focus,  don’t loose your focus",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"the time has come to embrace who you are",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"inside of you resides a great force",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"like the little turtles know the way to the ocean, so are you when you listen to the call",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"feeling emotional? Tell me about it, I will help you to transmute",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"you are the daughter, the mother and the crown, time for you to embrace that truth",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"all is complement in the universe",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"support the feminine ways, for that will bring you an awakening",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"embrace the sisterhood, find your true sisters",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+},{
+quote:"pain has been a good teacher, light is a greater teacher",
+cite: "The Great Mother",
+url:"http://www.magdalas.com/new-products"
+}];
+
+
+var randomQuote = Math.floor(Math.random() * myQuotes.length)
+
+$('p', '#randomquote').text(myQuotes[randomQuote].quote);
+$('cite a', '#randomquote').attr('href', myQuotes[randomQuote].url).text("" + myQuotes[randomQuote].cite);$('#randomquote').fadeOut(8000);
+    
+setInterval(function() {
+      
+var randomQuote = Math.floor(Math.random() * myQuotes.length)
+$('p', '#randomquote').text(myQuotes[randomQuote].quote);
+$('cite a', '#randomquote').attr('href', myQuotes[randomQuote].url).text("" + myQuotes[randomQuote].cite);$('#randomquote').fadeIn(2000);
+$('#randomquote').fadeOut(8000);
+              
+
+           
+            // Animation complete
+
+}, 5 * 2000);
+
+        function nextButton(){
+    
+}
+</script>
+ </div>
+</body>
+</html>
