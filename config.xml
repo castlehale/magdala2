@@ -1,60 +1,69 @@
-		<?xml version="1.0" encoding="UTF-8"?>
-	<widget xmlns = "http://www.w3.org/ns/widgets"
+<?xml version='1.0' encoding='UTF-8'?>
+<widget id='com.rpwalsh.magdala' version='2.0.0' xmlns='http://www.w3.org/ns/widgets'>
+<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
 		id        = "com.rpwalsh.magdala"
-		versionCode=""
+		versionCode="2.0.0"
 		version   = "2.0.0">
 		<name>Messages From The Great Mother		</name>
 		<description>Message from the Great Mother, is an application that you will receive every day a message from the Great Mother, encountering the perfect synchronicity in your life.. a message to meditate, showing  the path of the Emerging Feminine revealing the path of the Golden Era, a balance world.		</description>
 		<author href="http://rpwalsh.com" email="castlehalegroup@gmail.com">Castlehale Group		</author>
-		<feature name="http://api.phonegap.com/1.0/battery" />
-		<feature name="http://api.phonegap.com/1.0/camera" />
-		<feature name="http://api.phonegap.com/1.0/contacts" />
-		<feature name="http://api.phonegap.com/1.0/file" />
-		<feature name="http://api.phonegap.com/1.0/geolocation" />
-		<feature name="http://api.phonegap.com/1.0/media" />
-		<feature name="http://api.phonegap.com/1.0/network" />
-		<feature name="http://api.phonegap.com/1.0/notification" />
-		<preference name="phonegap-version" value="cli-6.3.0" />
-		<preference name="android-build-tool" value="gradle" />
-		<preference name="orientation" value="default" />
-		<preference name="fullscreen" value="true" />
-		<preference name="target-device" value="universal" />
-		<preference name="webviewbounce" value="true" />
-		<preference name="prerendered-icon" value="true" />
-		<preference name="stay-in-webview" value="true" />
-		<preference name="ios-statusbarstyle" value="default" />
-		<preference name="detect-data-types" value="true" />
-		<preference name="exit-on-suspend" value="true" />
-		<preference name="show-splash-screen-spinner" value="true" />
-		<preference name="auto-hide-splash-screen" value="true" />
-		<preference name="FadeSplashScreen " value="true" />
-		<preference name="EnableViewportScale" value="true" />
-		<preference name="MediaPlaybackRequiresUserAction" value="false" />
-		<preference name="AllowInlineMediaPlayback" value="true" />
-		<preference name="BackupWebStorage" value="cloud" />
-		<preference name="TopActivityIndicator" value="white" />
-		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
-		<preference name="KeyboardShrinksView " value="true" />
-		<preference name="HideKeyboardFormAccessoryBar" value="true" />
-		<preference name="SuppressesIncrementalRendering" value="true" />
-		<preference name="windows-arch" value="anycpu" />
-		<preference name="windows-identity-name" value="" />
-		<preference name="android-minSdkVersion" value="0" />
-		<preference name="android-targetSdkVersion" value="22" />
-		<preference name="android-installLocation" value="auto" />
-		<preference name="SplashScreenDelay" value="2000" />
-		<preference name="ErrorUrl" value="null" />
-		<preference name="BackgroundColor" value="0x000000" />
-		<preference name="DisallowOverscroll" value="false" />
-		<preference name="LoadingDialog" value="," />
-		<preference name="LoadUrlTimeoutValue" value="null" />
-		<platform name="ios">
-		</platform>
-		<platform name="android">
-		</platform>
-		<platform name="winphone">
-		</platform>
-		 <icon src="icon.png" />
-		</widget>
+
+    <name>
+        HelloCordova
+    </name>
+    <description>
+         A sample Apache Cordova application that responds to the deviceready
+        event. 
+    </description>
+    <author email='dev@cordova.apache.org' href='http://cordova.io'>
+         Apache Cordova Team 
+    </author>
+    <access origin='*'/>
+    <allow-intent href='http://*/*'/>
+    <allow-intent href='https://*/*'/>
+    <allow-intent href='tel:*'/>
+    <allow-intent href='sms:*'/>
+    <allow-intent href='mailto:*'/>
+    <allow-intent href='geo:*'/>
+    <allow-intent href='itms:*'/>
+    <allow-intent href='itms-apps:*'/>
+    <preference name='AllowInlineMediaPlayback' value='false'/>
+    <preference name='BackupWebStorage' value='cloud'/>
+    <preference name='DisallowOverscroll' value='false'/>
+    <preference name='EnableViewportScale' value='false'/>
+    <preference name='KeyboardDisplayRequiresUserAction' value='true'/>
+    <preference name='MediaPlaybackRequiresUserAction' value='false'/>
+    <preference name='SuppressesIncrementalRendering' value='false'/>
+    <preference name='SuppressesLongPressGesture' value='false'/>
+    <preference name='Suppresses3DTouchGesture' value='false'/>
+    <preference name='GapBetweenPages' value='0'/>
+    <preference name='PageLength' value='0'/>
+    <preference name='PaginationBreakingMode' value='page'/>
+    <preference name='PaginationMode' value='unpaginated'/>
+    <feature name='LocalStorage'>
+        <param name='ios-package' value='CDVLocalStorage'/>
+    </feature>
+    <feature name='HandleOpenUrl'>
+        <param name='ios-package' value='CDVHandleOpenURL'/>
+        <param name='onload' value='true'/>
+    </feature>
+    <feature name='IntentAndNavigationFilter'>
+        <param name='ios-package' value='CDVIntentAndNavigationFilter'/>
+        <param name='onload' value='true'/>
+    </feature>
+    <feature name='GestureHandler'>
+        <param name='ios-package' value='CDVGestureHandler'/>
+        <param name='onload' value='true'/>
+    </feature>
+    <feature name='NetworkStatus'>
+        <param name='ios-package' value='CDVConnection'/>
+    </feature>
+    <access origin='build.phonegap.com'/>
+    <access origin='s3.amazonaws.com'/>
+    <feature name='AppLoader'>
+        <param name='ios-package' value='AppLoader'/>
+    </feature>
+    <content src='index.html'/>
+</widget>
