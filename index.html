@@ -138,7 +138,10 @@ a, a:visited, a:active, a:hover
   };
   </script>
 </head>
-<body>
+<body><script>
+$( window ).resize(function() {
+  init();animate();
+});</script>
     <div id="container"></div>
 
 <script src="three.js"></script>
@@ -150,6 +153,7 @@ a, a:visited, a:active, a:hover
     <script src="WaterShader.js"></script>
 
     <script>
+
       if ( ! Detector.webgl ) {
         Detector.addGetWebGLMessage();
         document.getElementById( 'container' ).innerHTML = "";
@@ -167,6 +171,7 @@ a, a:visited, a:active, a:hover
         filterparam: 1
       };
       var waterNormals;
+      
       init();
       animate();
       function init() {
