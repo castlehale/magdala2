@@ -262,12 +262,40 @@ a, a:visited, a:active, a:hover
         } );
        window.addEventListener( 'resize', onWindowResize, false );
 
+
+$(document).ready(function () {
+    updateContainer();
+    $(window).resize(function() {
+        updateContainer();
+    });
+});
+function updateContainer() {
+    var $containerHeight = $(window).height();
+    if ($containerHeight <= 818) {
+        $(#ident).css({
+            position: 'static',
+            bottom: 'auto',
+            left: 'auto'
+        });
+    }
+    if ($containerHeight > 819) {
+        $(#mainBShim).css({
+            position: 'absolute',
+            bottom: '7%',
+            left: '7%'
+        });
+    }
+}
+
 function onWindowResize(){
 
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-
+updateContainer()
     renderer.setSize( window.innerWidth, window.innerHeight );
+
+
+
 
 }
       }
