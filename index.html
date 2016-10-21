@@ -7,7 +7,8 @@
   <meta name="author" content="This message has been brought by Magdala Ramirez">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>    
-    // A fortune cookie app
+    // A fortune cookie app                    
+
 </script>
 
 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Flamenco" rel="stylesheet">
@@ -83,10 +84,10 @@ width:60px;
 #mainTShimText {  
 
   position: absolute;
-    top:5%;
-bottom:5%;
-    left: 5%;
-    right:5%;
+    top:15%;
+bottom:15%;
+    left: 15%;
+    right:15%;
   background-color:rgba(0, 0, 0, 0.00);
 font-family: 'Flamenco', sans-serif;
   background-repeat: no-repeat;
@@ -138,25 +139,14 @@ a, a:visited, a:active, a:hover
   };
   </script>
 </head>
-<body><script>
-
-window.addEventListener( 'resize', onWindowResize, false );
-
-function onWindowResize(){
-
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-
-    renderer.setSize( window.innerWidth, window.innerHeight );
-
-}
-</script>
-    <div id="container"></div>
+<body>
 
 <script src="three.js"></script>
 
     <script src="Detector.js"></script>
-    
+        <script src="DeviceOrientationControls.js"></script>
+    <script src="VRControls.js"></script>
+
     <script src="OrbitControls.js"></script>
     <script src="Mirror.js"></script>
     <script src="WaterShader.js"></script>
@@ -194,6 +184,8 @@ function onWindowResize(){
         camera = new THREE.PerspectiveCamera( 55, window.innerWidth / window.innerHeight, 0.5, 3000000 );
         camera.position.set( 2000, 750, 2000 );
         controls = new THREE.OrbitControls( camera, renderer.domElement );
+        controls1 = new THREE.DeviceOrientationControls( camera, renderer.domElement );
+
         controls.enablePan = false;
         controls.minDistance = 1000.0;
         controls.maxDistance = 5000.0;
@@ -234,6 +226,22 @@ function onWindowResize(){
             canvas.height = size;
             var context = canvas.getContext( '2d' );
             context.drawImage( image, - x * size, - y * size );
+        function resizeCanvas() {
+                $(document).width = window.innerWidth;
+                $(document).height = window.innerHeight;
+              };     window.addEventListener('resize', resizeCanvas, false);
+              window.addEventListener('resize', onWindowResize, false);
+function onWindowResize(){
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+
+
+
+}
             return canvas;
           };
           cubeMap.images[ 0 ] = getSide( 2, 1 ); // px
