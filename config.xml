@@ -2,19 +2,11 @@
 <widget xmlns = "http://www.w3.org/ns/widgets" 
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
 		id        = "com.greatmother.magdala"
 		versionCode="2.1"
 		version   = "2.1.2">
 		<name>Messages From The Great Mother</name>
 		<description>Message from the Great Mother, is a virtual reality application that will give every day a message from the Great Mother, encountering the perfect synchronicity in your life.. a message to meditate, showing  the path of the Emerging Feminine revealing the path of the Golden Era, and a balanced world.		</description>
-=======
-		id        = "com.rpwalsh.magdala"
-		versionCode="10"
-		version   = "2.0.0">
-		<name>Messages From The Great Mother		</name>
-		<description>Message from the Great Mother, is an application that you will receive every day a message from the Great Mother, encountering the perfect synchronicity in your life.. a message to meditate, showing  the path of the Emerging Feminine revealing the path of the Golden Era, a balance world.		</description>
->>>>>>> parent of 9573fae... config
 		<author href="http://rpwalsh.com" email="castlehalegroup@gmail.com">Castlehale Group		</author>
     <access origin='*'/>
     <allow-intent href='http://*/*'/>
@@ -38,10 +30,6 @@
     <preference name='PageLength' value='0'/>
     <preference name='PaginationBreakingMode' value='page'/>
     <preference name='PaginationMode' value='unpaginated'/>
-<<<<<<< HEAD
-=======
-    <preference name="orientation" value="portrait" />
->>>>>>> parent of d9b2153... tt
     <feature name='LocalStorage'>
         <param name='ios-package' value='CDVLocalStorage'/>
     </feature>
