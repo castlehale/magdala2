@@ -280,36 +280,10 @@ a, a:visited, a:active, a:hover
 
 $(document).ready(function () {
     $(window).resize(function() {
-        updateContainer();
+        onWindowResize();
     });
 });
-function updateContainer() {
-    var $containerHeight = $(document).height();
-    if ($containerHeight <= 818) {
-        $('#ident').css({
-            position: 'absolute',
-            bottom: '7%',
-            right: '7%'
-        });
-        $('#mainBShim').css({
-            position: 'absolute',
-            bottom: '7%',
-            left: '7%'
-        });
-    }
-    if ($containerHeight > 819) {
-        $('#mainBShim').css({
-            position: 'absolute',
-            bottom: '7%',
-            left: '7%'
-        });
-        $('#ident').css({
-            position: 'absolute',
-            bottom: '7%',
-            right: '7%'
-        });
-    }
-}
+
 
 function onWindowResize(){
 
