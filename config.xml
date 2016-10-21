@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets" 
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
-		id        = "com.rpwalsh.magdala"
+		id        = "com.wMessagesfromtheGreatMother"
 		versionCode="10"
 		version   = "2.1.0">
 		<name>Messages From The Great Mother</name>
@@ -30,7 +30,6 @@
     <preference name='PageLength' value='0'/>
     <preference name='PaginationBreakingMode' value='page'/>
     <preference name='PaginationMode' value='unpaginated'/>
-    <preference name="orientation" value="landscape" />
     <feature name='LocalStorage'>
         <param name='ios-package' value='CDVLocalStorage'/>
     </feature>
