@@ -260,44 +260,7 @@ a, a:visited, a:active, a:hover
           shininess: 100,
           envMap: cubeMap
         } );
-       window.addEventListener( 'resize', onWindowResize, false );
 
-
-$(document).ready(function () {
-    updateContainer();
-    $(window).resize(function() {
-        updateContainer();
-    });
-});
-function updateContainer() {
-    var $containerHeight = $(window).height();
-    if ($containerHeight <= 818) {
-        $(#ident).css({
-            position: 'static',
-            bottom: 'auto',
-            left: 'auto'
-        });
-    }
-    if ($containerHeight > 819) {
-        $(#mainBShim).css({
-            position: 'absolute',
-            bottom: '7%',
-            left: '7%'
-        });
-    }
-}
-
-function onWindowResize(){
-
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-updateContainer()
-    renderer.setSize( window.innerWidth, window.innerHeight );
-
-
-
-
-}
       }
       //
       function animate() {
@@ -312,7 +275,54 @@ updateContainer()
         water.render();
         renderer.render( scene, camera );
       }
+       window.addEventListener( 'resize', onWindowResize, false );
 
+
+$(document).ready(function () {
+    updateContainer();
+    $(window).resize(function() {
+        updateContainer();
+    });
+});
+function updateContainer() {
+    var $containerHeight = $(document).height();
+    if ($containerHeight <= 818) {
+        $('#ident').css({
+            position: 'absolute',
+            bottom: '7%',
+            right: '7%'
+        });
+        $('#mainBShim').css({
+            position: 'absolute',
+            bottom: '7%',
+            left: '7%'
+        });
+    }
+    if ($containerHeight > 819) {
+        $('#mainBShim').css({
+            position: 'absolute',
+            bottom: '7%',
+            left: '7%'
+        });
+        $('#ident').css({
+            position: 'absolute',
+            bottom: '7%',
+            right: '7%'
+        });
+    }
+}
+
+function onWindowResize(){
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+updateContainer();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+
+
+
+}
 
     </script>
 <a href="http://www.magdalas.com" target='_blank'><img id="ident" height="75" width="75"src="logo2_sm.png" /></a></div>
