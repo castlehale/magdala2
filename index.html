@@ -139,9 +139,18 @@ a, a:visited, a:active, a:hover
   </script>
 </head>
 <body><script>
-$( window ).resize(function() {
-  init();animate();
-});</script>
+
+window.addEventListener( 'resize', onWindowResize, false );
+
+function onWindowResize(){
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+}
+</script>
     <div id="container"></div>
 
 <script src="three.js"></script>
