@@ -2,11 +2,11 @@
 <widget xmlns = "http://www.w3.org/ns/widgets" 
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
-		id        = "com.rpwalsh.magdala"
+		id        = "com.magdala.greatmother"
 		versionCode="10"
-		version   = "2.0.0">
-		<name>Messages From The Great Mother		</name>
-		<description>Message from the Great Mother, is an application that you will receive every day a message from the Great Mother, encountering the perfect synchronicity in your life.. a message to meditate, showing  the path of the Emerging Feminine revealing the path of the Golden Era, a balance world.		</description>
+		version   = "2.1.0">
+		<name>Messages From The Great Mother</name>
+		<description>Message from the Great Mother, is a virtual reality application that will give every day a message from the Great Mother, encountering the perfect synchronicity in your life.. a message to meditate, showing  the path of the Emerging Feminine revealing the path of the Golden Era, a balance world.		</description>
 		<author href="http://rpwalsh.com" email="castlehalegroup@gmail.com">Castlehale Group		</author>
     <access origin='*'/>
     <allow-intent href='http://*/*'/>

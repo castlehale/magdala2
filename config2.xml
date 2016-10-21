@@ -1,0 +1,108 @@
+		<?xml version='1.0' encoding='UTF-8'?>
+<widget xmlns = "http://www.w3.org/ns/widgets" 
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		id        = "com.magdala.greatmother"
+		versionCode="10"
+		version   = "2.1.0">
+		<name>Messages From The Great Mother</name>
+		<description>Message from the Great Mother, is an application that you will receive every day a message from the Great Mother, encountering the perfect synchronicity in your life.. a message to meditate, showing  the path of the Emerging Feminine revealing the path of the Golden Era, a balance world.		</description>
+		<author href="http://rpwalsh.com" email="castlehalegroup@gmail.com">Castlehale Group</author>
+		<access origin='*'/>
+    <allow-intent href='http://*/*'/>
+    <allow-intent href='https://*/*'/>
+    <allow-intent href='tel:*'/>
+    <allow-intent href='sms:*'/>
+    <allow-intent href='mailto:*'/>
+    <allow-intent href='geo:*'/>
+    <allow-intent href='itms:*'/>
+    <allow-intent href='itms-apps:*'/>
+		<preference name="phonegap-version" value="cli-6.3.0" />
+		<preference name="android-build-tool" value="gradle" />
+		<preference name="orientation" value="default" />
+		<preference name="fullscreen" value="true" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="prerendered-icon" value="true" />
+		<preference name="stay-in-webview" value="true" />
+		<preference name="ios-statusbarstyle" value="default" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="true" />
+		<preference name="show-splash-screen-spinner" value="true" />
+		<preference name="auto-hide-splash-screen" value="true" />
+		<preference name="FadeSplashScreen " value="true" />
+		<preference name="EnableViewportScale" value="true" />
+		<preference name="MediaPlaybackRequiresUserAction" value="false" />
+		<preference name="AllowInlineMediaPlayback" value="true" />
+		<preference name="BackupWebStorage" value="cloud" />
+		<preference name="TopActivityIndicator" value="white" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
+		<preference name="KeyboardShrinksView " value="true" />
+		<preference name="HideKeyboardFormAccessoryBar" value="true" />
+		<preference name="SuppressesIncrementalRendering" value="false" />
+		<preference name="windows-arch" value="anycpu" />
+		<preference name="windows-identity-name" value="" />
+		<preference name="android-minSdkVersion" value="0" />
+		<preference name="android-targetSdkVersion" value="22" />
+		<preference name="android-installLocation" value="auto" />
+		<preference name="SplashScreenDelay" value="2000" />
+		<preference name="ErrorUrl" value="null" />
+		<preference name="BackgroundColor" value="0x000000" />
+		<preference name="DisallowOverscroll" value="false" />
+		<preference name="LoadingDialog" value="," />
+		<preference name="LoadUrlTimeoutValue" value="null" />
+		<platform name="ios">
+		<icon src="57.png" width="57" height="57" />
+		<icon src="144.png" width="144" height="144" />
+		<icon src="72.png" width="72" height="72" />
+		<icon src="114.png" width="114" height="114" />
+		<icon src="100.png" width="100" height="100" />
+		<icon src="60.png" width="60" height="60" />
+		<icon src="120.png" width="120" height="120" />
+		<icon src="180.png" width="180" height="180" />
+		<icon src="76c.png" width="76" height="76" />
+		<icon src="152.png" width="152" height="152" />
+		<icon src="29.png" width="29" height="29" />
+		<icon src="58.png" width="58" height="58" />
+		<icon src="87.png" width="87" height="87" />
+		<icon src="40.png" width="40" height="40" />
+		<icon src="80.png" width="80" height="80" />
+		<splash src="1242.png" width="1242" height="2208" /> 
+		<splash src="2208.png" width="2208" height="1242" /> 
+		</platform>
+		<platform name="android">
+		<icon src="36.png" qualifier="ldpi" />
+		<icon src="48.png" qualifier="mdpi" />
+		<icon src="72.png" qualifier="hdpi" />
+		<icon src="96.png" qualifier="xhdpi" />
+		<icon src="144.png" qualifier="xxhdpi" />
+		<icon src="192.png" qualifier="xxxhdpi" />
+		</platform>
+		<platform name="winphone">
+		</platform>
+		 <icon src="icon.png" />
+<feature name='LocalStorage'>
+        <param name='ios-package' value='CDVLocalStorage'/>
+    </feature>
+    <feature name='HandleOpenUrl'>
+        <param name='ios-package' value='CDVHandleOpenURL'/>
+        <param name='onload' value='true'/>
+    </feature>
+    <feature name='IntentAndNavigationFilter'>
+        <param name='ios-package' value='CDVIntentAndNavigationFilter'/>
+        <param name='onload' value='true'/>
+    </feature>
+    <feature name='GestureHandler'>
+        <param name='ios-package' value='CDVGestureHandler'/>
+        <param name='onload' value='true'/>
+    </feature>
+    <feature name='NetworkStatus'>
+        <param name='ios-package' value='CDVConnection'/>
+    </feature>
+    <access origin='build.phonegap.com'/>
+    <access origin='s3.amazonaws.com'/>
+    <feature name='AppLoader'>
+        <param name='ios-package' value='AppLoader'/>
+    </feature>
+    <content src='index.html'/>
+</widget>
