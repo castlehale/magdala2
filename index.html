@@ -185,6 +185,7 @@ a, a:visited, a:active, a:hover
         camera.position.set( 2000, 750, 2000 );
         controls = new THREE.OrbitControls( camera, renderer.domElement );
         controls1 = new THREE.DeviceOrientationControls( camera, renderer.domElement );
+        controls2 = new THREE.VRControls( camera, renderer.domElement );
 
         controls.enablePan = false;
         controls.minDistance = 1000.0;
