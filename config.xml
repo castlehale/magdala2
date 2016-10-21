@@ -30,6 +30,10 @@
     <preference name='PageLength' value='0'/>
     <preference name='PaginationBreakingMode' value='page'/>
     <preference name='PaginationMode' value='unpaginated'/>
+<<<<<<< HEAD
+=======
+    <preference name="orientation" value="portrait" />
+>>>>>>> parent of d9b2153... tt
     <feature name='LocalStorage'>
         <param name='ios-package' value='CDVLocalStorage'/>
     </feature>
